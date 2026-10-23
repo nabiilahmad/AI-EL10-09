@@ -1,0 +1,3 @@
+# Program memakai library standar Python (termasuk Tkinter untuk GUI).
+# Linux: sudo apt install python3-tk
+pytest>=7.0   # hanya untuk menjalankan tes

@@ -1,0 +1,25 @@
+{
+  "stations": [
+    {"id": "terminal_utara", "name": "Terminal Utara",    "x": 5,  "y": 10},
+    {"id": "taman_kota",     "name": "Taman Kota",        "x": 5,  "y": 8},
+    {"id": "pusat",          "name": "Stasiun Pusat",     "x": 5,  "y": 5},
+    {"id": "pelabuhan",      "name": "Pelabuhan Selatan", "x": 5,  "y": 0},
+    {"id": "pasar_barat",    "name": "Pasar Barat",       "x": 1,  "y": 5},
+    {"id": "kampus_timur",   "name": "Kampus Timur",      "x": 9,  "y": 5},
+    {"id": "bandara",        "name": "Bandara",           "x": 13, "y": 5},
+    {"id": "mal_timur",      "name": "Mal Timur",         "x": 9,  "y": 9},
+    {"id": "stadion",        "name": "Stadion",           "x": 9,  "y": 1},
+    {"id": "rs_barat",       "name": "RS Barat",          "x": 1,  "y": 9},
+    {"id": "sekolah",        "name": "Sekolah",           "x": 1,  "y": 1}
+  ],
+  "lines": [
+    {"id": "merah",  "name": "Jalur Merah",  "color": "#e53e3e",
+     "stations": ["terminal_utara", "taman_kota", "pusat", "pelabuhan"]},
+    {"id": "biru",   "name": "Jalur Biru",   "color": "#3182ce",
+     "stations": ["pasar_barat", "pusat", "kampus_timur", "bandara"]},
+    {"id": "hijau",  "name": "Jalur Hijau",  "color": "#38a169",
+     "stations": ["terminal_utara", "mal_timur", "kampus_timur", "stadion", "pelabuhan"]},
+    {"id": "kuning", "name": "Jalur Kuning", "color": "#d69e2e",
+     "stations": ["terminal_utara", "rs_barat", "pasar_barat", "sekolah", "pelabuhan"]}
+  ]
+}
