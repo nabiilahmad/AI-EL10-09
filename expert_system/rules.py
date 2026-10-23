@@ -81,4 +81,6 @@ RULES: List[Rule] = [
          lambda f: "Asal dan tujuan sama. Anda sudah berada di tujuan."),
     Rule("R9", 0, lambda f: f.result.found and not f.disrupted and not f.same_place,
          lambda f: "Jaringan normal, tidak ada gangguan. Rute di bawah adalah rute terbaik."),
+    Rule("R10", 1, lambda f: len(f.closed_stations) >= 2,
+         lambda f: f"{len(f.closed_stations)} stasiun ditutup sekaligus. Cek informasi petugas sebelum berangkat."),
 ]
