@@ -17,9 +17,6 @@ Data dihasilkan dengan menjalankan BFS, UCS, dan A* pada jaringan di `data/jarin
 | Pasar Barat -> Bandara, Stasiun Pusat tutup | BFS | ya | 55.4 | 2 | 16 |
 |  | UCS | ya | 55.4 | 2 | 16 |
 |  | A* | ya | 55.4 | 2 | 16 |
-| Kampus Timur -> Pelabuhan Selatan, Stasiun Stadion tutup | BFS | ya | 25.0 | 1 | 11 |
-|  | UCS | ya | 25.0 | 1 | 13 |
-|  | A* | ya | 25.0 | 1 | 5 |
 | Bandara -> Taman Kota, Jalur Biru gangguan | BFS | tidak | - | - | 0 |
 |  | UCS | tidak | - | - | 0 |
 |  | A* | tidak | - | - | 0 |
@@ -32,8 +29,7 @@ Data dihasilkan dengan menjalankan BFS, UCS, dan A* pada jaringan di `data/jarin
 4. **UCS tidak selalu lebih hemat dari BFS.** Pada Pasar Barat ke Bandara, UCS mengecek 16 keadaan dan BFS hanya 10. UCS menjamin waktu tercepat, bukan pengecekan paling sedikit.
 5. **Pindah jalur memakan 5 menit**, sehingga rute terbaik dihitung dari total menit, termasuk waktu pindah, bukan hanya jumlah stasiun yang dilewati.
 6. **Gangguan mengubah rute dan waktu.** Saat Stasiun Pusat tutup, Pasar Barat ke Bandara harus memutar lewat Terminal Utara dan Kampus Timur dengan dua kali pindah jalur.
-7. **Tanpa rute.** Bandara hanya dilayani Jalur Biru, jadi jika Biru gangguan, semua algoritma menyimpulkan tidak ada rute dan sistem pakar menetapkan status
-8. **A\* paling hemat saat ada stasiun yang ditutup.** Pada Kampus Timur ke Pelabuhan Selatan dengan Stadion tutup, ketiga algoritma menemukan rute yang sama (25.0 menit), tetapi A* hanya mengecek 5 keadaan, sedangkan BFS 11 dan UCS 13. Petunjuk arah ke tujuan membuat A* tidak membuang waktu mengecek jalur yang menjauh.
+7. **Tanpa rute.** Bandara hanya dilayani Jalur Biru, jadi jika Biru gangguan, semua algoritma menyimpulkan tidak ada rute dan sistem pakar menetapkan status TERGANGGU.
 
 ## Catatan
 
